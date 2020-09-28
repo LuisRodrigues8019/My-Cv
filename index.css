@@ -1,39 +1,69 @@
 body{
-    background-color: #282828;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
+    background-color: white;
 
 }
 
-h2, h3, h4, p{
-    color: white;
+
+
+.contenaire{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.80fr 1fr 1fr 1fr;
+    grid-template-rows: 0.20fr 1fr 1fr 0.20fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar contenu contenu2 contenu3"
+    "sidebar contenu contenu2 contenu3"
+    "sidebar footer footer footer" ;
+
+
 }
 
+.nav{
+    background-color: cyan;
+    grid-area: nav;
+    border: solid 1px;
+    border-color: black;
+    
+}
+ 
+main{
+    background-color: darkcyan;
+    grid-area: main;
+}
+
+.sidebar{
+    background-color: darkcyan;
+    grid-area: sidebar;
+    
+}
+
+
+.content{
+    grid-area: contenu;
+    background-color: cadetblue;
+    justify-content: center;
+
+}
+
+.content2{
+    grid-area: contenu2;
+    background-color:cadetblue ;
+
+}
+
+.content3{
+    background-color: cadetblue;
+    grid-area: contenu3;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+}
 img{
-    width: 200px;
-    height: 200px;
-}
-
-.contenaire1{
-    background-color: rgb(9, 68, 9);
-    flex-direction: column;
-    grid-area: b;
-}
-
-.photo{
-    padding-top: 30px;
-    padding-left: 20px;
-}
-
-.info{
-    padding-top: 30px;
-    padding-left: 20px;
-}
-
-
-.contenaire2{
-
-    background-color: rgba(245, 245, 245, 0.185);
-    flex-direction: column;
-
+    width: 150px;
+    padding-left: 30px;
+    padding-top: 50px;
+    
 }
