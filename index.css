@@ -1,69 +1,133 @@
 body{
-    background-color: white;
-
+    font-size: 14px;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
 }
 
-
+h3{
+    text-decoration: underline;
+    color: rgba(16, 16, 83, 0.938);
+}
 
 .contenaire{
     min-height: 100vh;
     display: grid;
     grid-template-columns: 0.80fr 1fr 1fr 1fr;
-    grid-template-rows: 0.20fr 1fr 1fr 0.20fr;
+    grid-template-rows: 0.20fr 1fr 1fr 0.20fr ;
     grid-template-areas: 
     "nav nav nav nav"
-    "sidebar contenu contenu2 contenu3"
-    "sidebar contenu contenu2 contenu3"
+    "sidebar contenu2 contenu3 contenu4"
+    "sidebar contenu2 contenu3 contenu4"
     "sidebar footer footer footer" ;
-
-
 }
 
 .nav{
-    background-color: cyan;
     grid-area: nav;
-    border: solid 1px;
-    border-color: black;
-    
+    text-align: center;
+    background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );  
 }
  
-main{
-    background-color: darkcyan;
-    grid-area: main;
-}
-
 .sidebar{
-    background-color: darkcyan;
+    background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
     grid-area: sidebar;
     
 }
 
+#moi{
+ background: url("images/luisrodrigues.jpg");
+ width: 200px;
+ height: 200px;
+ margin-left: 50px;
+ margin-top: 40px;
+ opacity: 0.9;
 
-.content{
-    grid-area: contenu;
-    background-color: cadetblue;
-    justify-content: center;
 
+}
+
+.info{
+margin-top: 60px;
+margin-left: 30px;
+text-align: justify;
+
+}
+
+.info p, h2{
+ color: white;
 }
 
 .content2{
     grid-area: contenu2;
-    background-color:cadetblue ;
+   
 
 }
+
+.info2{
+   margin-left: 40px;
+   margin-top: 20px;
+   
+  
+}
+
+.info3{
+    margin-left: 60px;
+    margin-top: 20px;
+   
+
+}
+
+.info4{
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.info5{
+    margin-left: 100px;
+    margin-top: 70px;
+  
+}
+
+.info6{
+    margin-left: 60px;
+    margin-top: 40px;
+
+}
+
+.info7{
+    margin-left: 100px;
+    margin-top: 20px; 
+}
+
 
 .content3{
-    background-color: cadetblue;
-    grid-area: contenu3;
+    grid-area:contenu3;
+   
+
 }
+.content4{
+    grid-area:contenu4;
+   
+
+}
+
 
 .footer{
     grid-area: footer;
-    background-color: black;
+   
+
 }
-img{
-    width: 150px;
-    padding-left: 30px;
-    padding-top: 50px;
-    
+
+.skills{
+   display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: red;
+}
+
+h5{
+    text-align: center;
+}
+
+.footer{
+    background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );  
 }
