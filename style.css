@@ -1,0 +1,144 @@
+body{
+    font-size: 13px;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(49, 45, 45);
+}
+
+h3{
+    text-decoration: underline;
+    color: rgba(16, 16, 83, 0.938);
+}
+
+.contenaire{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.80fr 1fr 1fr 1fr;
+    grid-template-rows: 0.50fr 1fr 1fr 0.20fr ;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar contenu2 contenu3 contenu4"
+    "sidebar contenu2 contenu3 contenu4"
+    "sidebar contenu2 contenu3 contenu4" ;
+}
+
+.nav{
+    grid-area: nav;
+    background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+
+}
+
+.moi1{ 
+    text-align: center;
+    width: 100%;
+    height:100px;
+    display: flex;
+    background-image: linear-gradient( 109.5deg,  rgba(229,233,177,1) 11.2%, rgba(223,205,187,1) 100.2% );
+    margin-top: 20px;
+  }
+
+  
+.moi2{
+width: 100px;
+margin-left: 125px;
+border-radius: 50%;
+border: solid 1px white;
+}
+
+.resume {
+    margin-left: 430px;
+   
+}
+
+.resume h2, h1{
+    font-family: 'Sansita Swashed', cursive;
+  
+}
+
+
+.sidebar{
+    background-image: linear-gradient( 109.5deg,  rgba(229,233,177,1) 11.2%, rgba(223,205,187,1) 100.2% );
+    grid-area: sidebar;
+    
+    
+}
+
+
+.info{
+margin-top: 120px;
+margin-left: 30px;
+text-align: justify;
+
+}
+
+.skill{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.content2{
+    grid-area: contenu2; 
+}
+
+.info2{
+   margin-left: 45px;
+   margin-top: 25px;
+   
+  
+}
+
+.info3{
+    margin-left: 60px;
+    margin-top: 20px;
+   
+
+}
+
+.info4{
+    margin-left: 38px;
+    margin-top: 20px;
+
+}
+
+.info5{
+    margin-left: 100px;
+    margin-top: 70px;
+  
+}
+
+.info6{
+    margin-left: 45px;
+    margin-top: 45px;
+
+}
+
+.info7{
+    margin-left: 100px;
+    margin-top: 23px; 
+}
+
+
+.content3{
+    grid-area:contenu3;
+   
+
+}
+.content4{
+    grid-area:contenu4;
+   
+}
+
+@media screen and (max-width:780px){
+ 
+.contenaire{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nav"
+    "sidebar"
+    "contenu2"
+    "contenu3" 
+    "contenu4"
+    ;
+}
+
+}
